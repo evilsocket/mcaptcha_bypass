@@ -1,0 +1,11 @@
+[package]
+name = "mcaptcha_bypass"
+version = "0.1.0"
+authors = ["Simone Margaritelli <evilsocket@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+serde = { version = "1.0.129", features = ["derive"] }
+serde_json = "1.0.66"
+pow_sha256 = { git = "https://github.com/mCaptcha/pow_sha256", branch = "master" }
